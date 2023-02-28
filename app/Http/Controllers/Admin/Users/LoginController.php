@@ -11,7 +11,11 @@ class LoginController extends Controller
     public  function index()
     {
         return view('admin.users.login',
-        ['title' => 'dang nhap']
+        ['title' => 'Đăng nhập hệ thống']
     );
+    }
+    public function store( Request $request)
+    {
+        dd($request->input());
     }
 }
