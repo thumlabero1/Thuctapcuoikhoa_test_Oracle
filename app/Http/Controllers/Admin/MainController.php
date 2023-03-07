@@ -9,6 +9,8 @@ class MainController extends Controller
 {
     public function index()
     {
-        echo "login admin successfully";
+        return view('admin.home', [
+            'title' => 'Trang quản trị Administratior'
+        ]);
     }
 }
