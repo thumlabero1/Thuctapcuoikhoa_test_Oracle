@@ -9,6 +9,9 @@ class MenuController extends Controller
 {
     //
  public function create(){
-    echo"123";
+
+    return view('admin.menus.add',[
+      'title' => 'Add products',
+    ]);
  }
 }

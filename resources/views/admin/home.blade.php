@@ -1,5 +1,4 @@
 @extends('admin.main')
 @section('content')
-nội dung
-
+Trang chu
 @endsection
