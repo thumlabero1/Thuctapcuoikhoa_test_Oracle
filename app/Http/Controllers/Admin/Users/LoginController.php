@@ -26,9 +26,10 @@ class LoginController extends Controller
             'password'=> 'required'
         ]);
 
-        if(Auth::attempt(['email' => $request->input(key: 'email'),
-            'password' => $request->input(key: 'password'),// $password = bcrypt('password');
-            // 
+        if(Auth::attempt([
+            'email' => $request->input(key: 'email'),
+            'password' => $request->input(key: 'password'),
+            
     ], $request->input(key: 'remember')))
         {
 
